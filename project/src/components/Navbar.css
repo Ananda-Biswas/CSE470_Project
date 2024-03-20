@@ -1,0 +1,44 @@
+.navbar {
+    background: rgba(187, 143, 206);
+    background: radial-gradient(circle, rgba(187, 143, 206) 32%, rgba(187, 143, 206) 100%);
+    margin-bottom: 0px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav li {
+    padding: 0 20px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: #0000001c;
+}
+
+.navbar-link {
+    color: #BB8FCE;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.violet-line {
+    width: 100%;
+    height: 4px;
+    background-color: #8e00ca; /* Violet color */
+}
+
+
+/* Navbar CSS */
+
+.navbar-nav .nav-link:hover {
+    background-color: #172a7e9a;
+    color: black;
+  }
+  
+
+
