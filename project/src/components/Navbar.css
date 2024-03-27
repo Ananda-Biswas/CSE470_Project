@@ -34,11 +34,25 @@
 
 
 /* Navbar CSS */
+.navbar-nav .nav-link:hover,
+.team-option-heading:hover { /* Apply styles to both regular nav links and dropdown option heading on hover */
+    background-color: #172a7e9a; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
 
-.navbar-nav .nav-link:hover {
-    background-color: #172a7e9a;
-    color: black;
+  .team-option-heading {
+    font-size: 15px; /* Adjust the font size as needed */
+    font-weight: 600; /* Apply desired font weight */
+    color: #172a7e9a; /* Use the same text color as other navigation links */
+    border-radius: 15px; /* Apply desired border radius */
+    background-color: #172a7e9a; /* Apply desired background color */
+    padding: 0px 20px; /* Apply desired padding */
   }
   
-
-
+  select.nav-link {
+    color: black; /* Change text color */
+    background-color: #172a7e9a; /* Change background color */
+    border: 1px solid #172a7e9a; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    padding: 8px 20px; /* Add padding */
+}
