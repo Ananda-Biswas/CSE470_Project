@@ -10,6 +10,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle'; // Adjust the path 
 
 function App() {
   return (
+    
     <Router>
       <div>
         <Routes>

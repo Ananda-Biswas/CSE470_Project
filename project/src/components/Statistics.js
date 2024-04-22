@@ -1,21 +1,46 @@
 import React, { useState } from 'react';
-
+import './Statistics.css';
 export default function Statistics() {
     const pointsData = [
         {
+            year: 2023,
+            teams: [
+                { name: 'GT', points: 20 },
+                { name: 'CSK', points: 17 },
+                { name: 'MI', points: 16 },
+                { name: 'RR', points: 14 },
+                { name: 'RCB', points: 14 },
+                { name: 'KKR', points: 12 },
+                { name: 'PBKS', points: 12 },
+                { name: 'DC', points: 10 },
+                { name: 'SRH', points: 8 },
+            ],
+        },
+        {
             year: 2022,
             teams: [
-                { name: 'Team A', points: 10 },
-                { name: 'Team B', points: 8 },
-                { name: 'Team C', points: 6 },
+                { name: 'GT', points: 20 },
+                { name: 'RR', points: 18 },
+                { name: 'RCB', points: 16 },
+                { name: 'DC', points: 14 },
+                { name: 'PBKS', points: 14 },
+                { name: 'KKR', points: 14 },
+                { name: 'SRH', points: 12 },
+                { name: 'CSK', points: 8 },
+                { name: 'MI', points: 8 },
             ],
         },
         {
             year: 2021,
             teams: [
-                { name: 'Team X', points: 12 },
-                { name: 'Team Y', points: 9 },
-                { name: 'Team Z', points: 7 },
+                { name: 'DC', points: 20 },
+                { name: 'CSK', points: 18 },
+                { name: 'RCB', points: 18 },
+                { name: 'KKR', points: 14 },
+                { name: 'MI', points: 14 },
+                { name: 'PBKS', points: 12 },
+                { name: 'RR', points: 10 },
+                { name: 'SRH', points: 6 },
             ],
         },
         // Add more years and teams as needed
@@ -33,7 +58,7 @@ export default function Statistics() {
         <div>
             <section id="statistics" className="points-section">
                 <div className="container">
-                    <h2 className="section-heading"><center>Points Table</center></h2>
+                    <h2 className="about-heading"><center>Points Table</center></h2>
                     <div className="dropdown">
                         <button
                             className="dropdown-button"
@@ -64,6 +89,7 @@ export default function Statistics() {
                             </tr>
                         </thead>
                         <tbody>
+                            
                             {pointsData
                                 .find((data) => data.year === selectedYear)
                                 .teams.map((team, index) => (

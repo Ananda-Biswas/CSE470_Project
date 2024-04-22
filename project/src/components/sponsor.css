@@ -1,0 +1,22 @@
+.sponsor-item {
+  width: 100%;
+  height: auto;
+  
+}
+
+.sponsor{
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+  text-align: justify;
+
+}
+
+.col-md-4 {
+  margin-bottom: 20px;
+}
+
+.about-heading{
+  font-family: 'Bungee', sans-serif;
+}
