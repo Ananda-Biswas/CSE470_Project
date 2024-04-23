@@ -50,7 +50,7 @@
     padding: 0px 20px; /* Apply desired padding */
   }
   
-  select.nav-link {
+  .select.nav-link {
     color: black; /* Change text color */
     background-color: #172a7e9a; /* Change background color */
     border: 1px solid #172a7e9a; /* Add border */

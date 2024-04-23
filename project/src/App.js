@@ -6,7 +6,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle'; // Adjust the path as needed
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle'; 
 
 function App() {
   return (
