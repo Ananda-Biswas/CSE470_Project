@@ -23,6 +23,7 @@
 .navbar-link {
     color: #BB8FCE;
     font-weight: 600;
+    
     font-size: 16px;
 }
 
@@ -55,4 +56,14 @@
     border: 1px solid #172a7e9a; /* Add border */
     border-radius: 4px; /* Add border radius */
     padding: 8px 20px; /* Add padding */
+}
+
+.about-heading{
+    font-family: 'Bungee', sans-serif;
+}
+.nav-item{
+    font-family: 'Bungee', sans-serif;
+}
+.navbar-brand{
+    font-family: 'Lobster', cursive;
 }

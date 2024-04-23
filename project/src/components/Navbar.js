@@ -31,9 +31,11 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-success">
         <Link className="navbar-brand" to="/"> 
-          <h1>
+          <h1 classname="about-heading">
+            
             Cricket Premier League
             <div className="violet-line"></div>
+            
           </h1>
         </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -43,21 +45,18 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/teams" onClick={scrollToTeams}>Teams</Link>
+              <Link to="#" className="nav-link" onClick={scrollToAbout}>About</Link>
             </li>
             <li className="nav-item">
-              <Link to="#" className="nav-link" onClick={scrollToStatistics}>
-                Point Table
-              </Link>
+              <Link to="#" className="nav-link"  onClick={scrollToTeams}>Teams</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="#" className="nav-link" onClick={scrollToStatistics}>Point Table</Link>
             </li>
             <li className="nav-item">
               <Link to="#" className="nav-link"  onClick={scrollToGallery}>Gallery</Link>
             </li>
-            <li className="nav-item">
-              <Link to="#" className="nav-link" onClick={scrollToAbout}>
-                About
-              </Link>
-            </li>
+            
             <li className="nav-item">
               <Link className="nav-link" to="/login">Log In</Link>
             </li>
