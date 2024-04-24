@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const UserSchema = new Schema({
+const PlayerSchema = new Schema({
     username: {
         type: String,
         lowercase: true,
@@ -24,11 +24,10 @@ const UserSchema = new Schema({
         type: Number,
         required: [true, "Password can't be blank"]
     },
-  
     date: {
         type: Date,
         default: Date.now
     }
 });
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('Player', PlayerSchema);

@@ -1,7 +1,10 @@
 import React from 'react';
 import './Login.css'; // Import the CSS file
-
+import MemberSignupForm from '../components/MemberSignupForm';
+import PlayerSignupForm from '../components/PlayerSignupForm';
+import AdminLoginForm from '../components/AdminLoginForm';
 export default function Login() {
+
 
   return (
     <div className="body"> 
@@ -13,97 +16,17 @@ export default function Login() {
         <button className="tablinks" onClick={openTab('member')}>User</button>
       </div>
 
-      <div id="admin" className={"tabcontent"} >
-        <form method="post" action="/admin_login_view">
-          <label htmlFor="username">Username</label>
-          <input type="text" name="username" required />
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" required />
-          <input type="submit" value="Login" />
-        </form>
-      </div>
+  
 
-      <div id="player" className="tabcontent ">
-        <form method="post" action="/player_login_view">
-          <label htmlFor="username">Username</label>
-          <input type="text" name="username" required />
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" required />
-          <input type="submit" value="Login" />
-          <button className="tablinks green-button" onClick={openTab('forgot_player')}>Forgot Password</button>
-          <h3> </h3>
-          <label className="h2"> Wanna register to World Class Tournament?</label>
-          <button className="tablinks green-button" onClick={openTab('signup_player')}> Join as Player </button>
-        </form>
-      </div>
-
-      <div id="member" className="tabcontent">
-        <form method="post" action="/member_login_view">
-          <label htmlFor="username">Username</label>
-          <input type="text" name="username" required />
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" required />
-          <input type="submit" value="Login" />
-
-          <button className="tablinks green-button" onClick={openTab('forgot_member')}>Forgot Password</button>
-          <h3> </h3>
-          <label className="h2"> Don't have an account?</label>
-          <button className="tablinks green-button" onClick={openTab('signup_member')}> Join as member </button>
-        </form>
-      </div>
-
-      <div id="signup_player" className="tabcontent">
-        <form method="post" action="/contact">
-          <label htmlFor="username">Username</label>
-          <input type="text" name="username" required />
-          <label htmlFor="email">Email</label>
-          <input type="text" name="email" required />
-          <label htmlFor="phone">Phone</label>
-          <input type="text" name="phone" required />
-          <label htmlFor="id">ID</label>
-          <input type="text" name="text" required />
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" required />
-          <label htmlFor="confirm_password">Confirm Password</label>
-          <input type="password" name="confirm_password" required />
-          <input type="submit" value="Sign Up" />
-        </form>
-      </div>
-
-      <div id="signup_member" className="tabcontent">
-        <form method="post" action="/contact">
-          <label htmlFor="username">Username</label>
-          <input type="text" name="username" required />
-          <label htmlFor="email">Email</label>
-          <input type="text" name="email" required />
-          <label htmlFor="phone">Phone</label>
-          <input type="text" name="phone" required />
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" required />
-          <label htmlFor="confirm_password">Confirm Password</label>
-          <input type="password" name="confirm_password" required />
-          <input type="submit" value="Sign Up" />
-        </form>
-      </div>
+     
+      <AdminLoginForm/>
+      <MemberSignupForm/>
+      <PlayerSignupForm/>
       
-      <div id="forgot_player" className="tabcontent">
-        <form method="post" action="/reset_password">
-          <label htmlFor="username">Username</label>
-          <input type="text" name="username" required />
-          <label htmlFor="password">New Password</label>
-          <input type="password" name="password" required />
-          <input type="submit" value="Reset Password" />
-        </form>
-      </div>
-      <div id="forgot_member" className="tabcontent">
-        <form method="post" action="/reset_password">
-          <label htmlFor="username">Username</label>
-          <input type="text" name="username" required />
-          <label htmlFor="password">New Password</label>
-          <input type="password" name="password" required />
-          <input type="submit" value="Reset Password" />
-        </form>
-      </div>
+      
+      
+      
+      
     </div>
   );
 }
