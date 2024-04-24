@@ -56,12 +56,14 @@ export default function Navbar() {
             <li className="nav-item">
               <Link to="#" className="nav-link"  onClick={scrollToGallery}>Gallery</Link>
             </li>
-            
+            <li className="nav-item">
+              <Link className="nav-link" to="/admin">Admin Login</Link>
+            </li>
             <li className="nav-item">
               <Link className="nav-link" to="/login">Log In</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/signup">Sign Up</Link>
+              <Link className="nav-link" to="/Member">Sign Up</Link>
             </li>
           </ul>
         </div>

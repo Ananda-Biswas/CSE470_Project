@@ -1,0 +1,84 @@
+/* Admin.css */
+
+/* Navbar styles */
+.navbar {
+    background-color: #28a745; /* Green color */
+    overflow: hidden;
+}
+
+.navbar-brand {
+    color: #fff; /* White color for brand */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for toggler icon */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Align items to the right */
+}
+
+.nav-item {
+    margin-right: 10px; /* Add space between nav items */
+}
+
+.nav-link {
+    color: #fff; /* White color for nav links */
+}
+
+.nav-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Section styles */
+.section {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Players list styles */
+.players-list {
+    margin-top: 20px;
+}
+
+.players-list h3 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Button styles */
+button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white on hover */
+}

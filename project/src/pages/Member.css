@@ -1,0 +1,110 @@
+/* Navbar.css */
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .navbar li {
+    flex: 1; /* Equal width for each column */
+  }
+  
+  .navbar li.active {
+    background-color: lightgreen; /* Change background color of active column */
+  }
+  
+  .navbar li:hover {
+    background-color: #555;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Full-width styles */
+  .full-width {
+    width: 100%; /* Ensure navbar takes up full width */
+  }
+  
+  /* Member.css */
+  
+  /* Table styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Section styles */
+  .section {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input, select {
+    margin-bottom: 16px;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* Opinion Box styles */
+  .opinion-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .opinion-box p {
+    margin: 0;
+  }
