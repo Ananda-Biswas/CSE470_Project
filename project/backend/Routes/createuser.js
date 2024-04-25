@@ -60,9 +60,15 @@ router.post('/adminlogin', async (req, res) => {
         if (!admin || admin.password !== password) {
             return res.status(401).json({ success: false, message: 'Invalid username or password' });
         }
+        const data ={
+            userData:{
+                id:admin.id
+            }
+        }
+        const authToken= jwt.sign(data,jwtSecret)
 
         // If admin is found and password matches, return success message
-        res.status(200).json({ success: true, message: 'Login successful', admin });
+        res.status(200).json({ success: true,authToken:authToken });
     } catch (error) {
         console.error('Error logging in:', error);
         res.status(500).json({ success: false, message: error.message || 'Failed to login' });

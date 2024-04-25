@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 export default function AdminLoginForm() {
     const [formData, setFormData] = useState({
@@ -7,30 +8,23 @@ export default function AdminLoginForm() {
     });
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
-    
-    
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         setLoading(true);
 
         try {
-            const response = await fetch('http://localhost:5000/api/adminlogin', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            });
+            const response = await axios.post('http://localhost:5000/api/adminlogin', formData);
 
-            if (response.ok) {
+            if (response.status === 200) {
+                const authToken = response.data.authToken;
+                localStorage.setItem('authToken',authToken); // Store token in session storage
                 console.log('User logged in successfully');
                 // Reset form data after successful login
                 setFormData({ username: '', password: '' });
                 setError('');
             } else {
-                const errorData = await response.json();
-                setError(errorData.message || 'Login failed');
+                setError(response.data.message || 'Login failed');
             }
         } catch (error) {
             console.error('Error logging in:', error);
