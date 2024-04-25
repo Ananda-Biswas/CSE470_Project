@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 
 export default function MemberSignupForm() {
-    const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     username: '',
     email: '',
     location: '',
@@ -10,10 +10,9 @@ export default function MemberSignupForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     try {
       const response = await fetch('http://localhost:5000/api/createuser', {
-        method: 'POST', 
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },

@@ -60,8 +60,15 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/Login">Log In</Link>
             </li>
+
             <li className="nav-item">
-              <Link className="nav-link" to="/signup">Sign Up</Link>
+              <Link className="nav-link" to="/admin_dashboard">Admin Dashboard</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/player_dashboard">Player Dashboard</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/member_dashboard">Member Dashboard</Link>
             </li>
           </ul>
         </div>

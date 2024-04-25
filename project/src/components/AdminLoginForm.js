@@ -17,8 +17,7 @@ export default function AdminLoginForm() {
             const response = await axios.post('http://localhost:5000/api/adminlogin', formData);
 
             if (response.status === 200) {
-                const authToken = response.data.authToken;
-                localStorage.setItem('authToken',authToken); // Store token in session storage
+                
                 console.log('User logged in successfully');
                 // Reset form data after successful login
                 setFormData({ username: '', password: '' });
