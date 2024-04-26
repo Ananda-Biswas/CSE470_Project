@@ -2,6 +2,8 @@
 import React from 'react';
 import Member_registration from '../components/Member_registration';
 import Member_opinion from '../components/Member_opinion';
+import Show_opinion from '../components/Show_opinion';
+
 
 export default function Member_dashboard() {
 
@@ -13,6 +15,7 @@ export default function Member_dashboard() {
       <div className="tab">
         <button className="tablinks" onClick={openTab('member_reg')}>Member Registration</button>
         <button className="tablinks" onClick={openTab('opinion')}>Opinion</button>
+        <button className="tablinks" onClick={openTab('opinions')}>Given Opinions</button>
     
       </div>
 
@@ -22,7 +25,7 @@ export default function Member_dashboard() {
       <Member_registration/>
       <Member_opinion/>
       
-      
+      <Show_opinion/>
       
       
       

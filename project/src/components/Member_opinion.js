@@ -49,7 +49,7 @@ return (
                 <label htmlFor="opinion">Opinion</label>
                 <input type="text" name="opinion" value={formData.opinion} onChange={handleChange} required />
 
-                <input type="submit" value="Log in" />
+                <input type="submit" value="Submit" />
         </form>
       </div>
 

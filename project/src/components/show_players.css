@@ -1,0 +1,16 @@
+.box {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+.tabconten {
+    display: none;
+    padding: 6px 32px;
+    border: 1px solid #9FE2BF;
+    background-color: white;
+
+    border-top: none;
+    width: 500px;
+    margin: 0 auto;
+    color: #000000;
+    
+}

@@ -189,4 +189,89 @@ router.post('/registerplayer', async (req, res) => {
     }
 });
 
+
+  router.get('/playerRegistrations', async (req, res) => {
+    try {
+      // Construct query object based on request parameters
+      const query = {};
+      if (req.query.name) query.name = req.query.name;
+      if (req.query.age) query.age = req.query.age;
+      if (req.query.country) query.country = req.query.country;
+      if (req.query.height) query.height = req.query.height;
+      if (req.query.blood_group) query.blood_group = req.query.blood_group;
+      if (req.query.debut) query.debut = req.query.debut;
+      if (req.query.price) query.price = req.query.price;
+      if (req.query.position) query.position = req.query.position;
+  
+      // Find player registrations based on query
+      
+      const playerRegistrations = await PlayerReg.find(query);
+  
+      // Send back the retrieved player registrations
+      res.status(200).json(playerRegistrations);
+    } catch (error) {
+      console.error('Error fetching player registrations:', error);
+      res.status(500).json({ success: false, message: 'Failed to fetch player registrations' });
+    }
+  });
+  router.get('/showopinions', async (req, res) => {
+    try {
+      // Construct query object based on request parameters
+      const query = {};
+      if (req.query.name) query.name = req.query.name;
+      if (req.query.opinion) query.opinion = req.query.opinion;
+      if (req.query.date) query.date = req.query.date;
+  
+      // Find player registrations based on query
+      
+      const showopinions = await Opinion.find(query);
+  
+      // Send back the retrieved player registrations
+      res.status(200).json(showopinions);
+    } catch (error) {
+      console.error('Error fetching player registrations:', error);
+      res.status(500).json({ success: false, message: 'Failed to fetch player registrations' });
+    }
+  });
+
+  router.get('/showcomplaints', async (req, res) => {
+    try {
+      // Construct query object based on request parameters
+      const query = {};
+      if (req.query.name) query.name = req.query.name;
+      if (req.query.complaint) query.complaint = req.query.complaint;
+      if (req.query.date) query.date = req.query.date;
+  
+      // Find player registrations based on query
+      
+      const showComplaint = await Complaint.find(query);
+  
+      // Send back the retrieved player registrations
+      res.status(200).json(showComplaint);
+    } catch (error) {
+      console.error('Error fetching player registrations:', error);
+      res.status(500).json({ success: false, message: 'Failed to fetch player registrations' });
+    }
+  });
+
+  router.get('/teamRegistrations', async (req, res) => {
+    try {
+      // Construct query object based on request parameters
+      const query = {};
+      if (req.query.teamname) query.teamname = req.query.teamname;
+      if (req.query.teamparse) query.teamparse = req.query.teamparse;
+      if (req.query.numberplayers) query.numberplayers = req.query.numberplayers;
+      if (req.query.homestadium) query.homestadium = req.query.homestadium;
+  
+      // Find player registrations based on query
+      
+      const showTeams = await Team.find(query);
+  
+      // Send back the retrieved player registrations
+      res.status(200).json(showTeams);
+    } catch (error) {
+      console.error('Error fetching player registrations:', error);
+      res.status(500).json({ success: false, message: 'Failed to fetch player registrations' });
+    }
+  });
 module.exports = router;
