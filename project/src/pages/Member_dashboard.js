@@ -24,7 +24,6 @@ export default function Member_dashboard() {
      
       <Member_registration/>
       <Member_opinion/>
-      
       <Show_opinion/>
       
       

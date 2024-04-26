@@ -14,7 +14,7 @@ export default function Player_dashboard() {
       <h1 className="h1">Cricket Premier League</h1>
 
       <div className="tab">
-        <button className="tablinks" onClick={openTab('player_reg')}>Member Registration</button>
+        <button className="tablinks" onClick={openTab('player_reg')}>Player Registration</button>
         <button className="tablinks" onClick={openTab('complaint')}>Complaint</button>
         <button className="tablinks" onClick={openTab('show_players')}>Registered Players</button>
         <button className="tablinks" onClick={openTab('show_teams')}>Registered Teams</button>
