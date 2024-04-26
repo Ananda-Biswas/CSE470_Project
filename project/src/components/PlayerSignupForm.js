@@ -92,8 +92,7 @@ return (
                 <input type="password" name="password" value={formDatas.password} onChange={handleChanges} required />
 
                 <input type="submit" value="Log in" />
-          <button className="tablinks green-button" onClick={openTab('forgot_player')}>Forgot Password</button>
-          <h3> </h3>
+        
           <label className="h2"> Wanna Register in World Class Tournament?</label>
           <button className="tablinks green-button" onClick={openTab('signup_player')}> Join as Player </button>
         </form>
@@ -117,17 +116,7 @@ return (
         </form>
       </div>
 
-      <div id="forgot_player" className="tabcontent">
-        <form method="post" action="/reset_password">
-          <label htmlFor="username">Username</label>
-          <input type="text" name="username" required />
-          <label htmlFor="password">New Password</label>
-          <input type="password" name="password" required />
-          <input type="submit" value="Reset Password" />
-        </form>
-      </div>
-
-
+      
         
 
     </div>

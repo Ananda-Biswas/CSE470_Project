@@ -68,7 +68,7 @@ return (
                 <label htmlFor="position">Position</label>
                 <input type="text" name="position" value={formData.position} onChange={handleChange} required />
 
-                <input type="submit" value="Log in" />
+                <input type="submit" value="Register" />
          
         </form>
       </div>

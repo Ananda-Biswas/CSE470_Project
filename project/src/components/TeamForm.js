@@ -56,7 +56,7 @@ return (
 
 
 
-                <input type="submit" value="Log in" />
+                <input type="submit" value="Register" />
         </form>
       </div>
 

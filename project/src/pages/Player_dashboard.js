@@ -2,6 +2,8 @@
 import React from 'react';
 import Player_complaint from '../components/Player_complaint';
 import Player_registration from '../components/Player_registration';
+import Show_players from '../components/Show_players';
+import Show_teams from '../components/Show_teams';
 
 
 export default function Player_dashboard() {
@@ -12,8 +14,11 @@ export default function Player_dashboard() {
       <h1 className="h1">Cricket Premier League</h1>
 
       <div className="tab">
-        <button className="tablinks" onClick={openTab('player_reg')}>Member Registration</button>
+        <button className="tablinks" onClick={openTab('player_reg')}>Player Registration</button>
         <button className="tablinks" onClick={openTab('complaint')}>Complaint</button>
+        <button className="tablinks" onClick={openTab('show_players')}>Registered Players</button>
+        <button className="tablinks" onClick={openTab('show_teams')}>Registered Teams</button>
+      
     
       </div>
 
@@ -22,6 +27,8 @@ export default function Player_dashboard() {
 
       <Player_complaint/>
       <Player_registration/>
+      <Show_players/>
+      <Show_teams/>
       
       
       

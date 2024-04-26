@@ -1,7 +1,8 @@
 import React from 'react'
 import TeamForm from '../components/TeamForm'; 
 import Assigned_player from '../components/Assigned_player'; 
-import Ban_players from '../components/Ban_players'; 
+import Show_complaints from '../components/Show_complaints';
+
 export default function Admin_dashboard() {
   return (
   <div className="body"> 
@@ -10,6 +11,7 @@ export default function Admin_dashboard() {
   <div className="tab">
     <button className="tablinks" onClick={openTab('team')}>Team Registration</button>
     <button className="tablinks" onClick={openTab('team_player')}>Player Assigned</button>
+    <button className="tablinks" onClick={openTab('show_complaint')}>Player's Complaints</button>
  
   </div>
 
@@ -18,7 +20,7 @@ export default function Admin_dashboard() {
  
   <TeamForm/>
   <Assigned_player/>
-  <Ban_players/>
+  <Show_complaints/>
 
   
   

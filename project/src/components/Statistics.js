@@ -43,7 +43,7 @@ export default function Statistics() {
                 { name: 'SRH', points: 6 },
             ],
         },
-        // Add more years and teams as needed
+
     ];
 
     const [selectedYear, setSelectedYear] = useState(pointsData[0].year);
